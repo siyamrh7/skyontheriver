@@ -1,0 +1,79 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #0b1524;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  color: #c9a45c;
+  text-decoration: none;
+}
+a:hover {
+  color: #e2c284;
+}
+::selection {
+  background: #c9a45c;
+  color: #0b1524;
+}
+button, input {
+  font-family: inherit;
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes shimmer {
+  0% { opacity: .35; }
+  50% { opacity: 1; }
+  100% { opacity: .35; }
+}
+
+/* Reusable hover states — inline styles can't express :hover, so the handful
+   of hover effects from the prototype live here as small utility classes. */
+.gold-btn:hover { background: #e2c284 !important; }
+.link-gold:hover { color: #e2c284 !important; }
+.outline-btn:hover { border-color: #c9a45c !important; }
+.danger-outline:hover { background: rgba(201,107,92,0.12) !important; }
+.danger-text:hover { color: #c96b5c !important; }
+.nav-tab:hover { color: #e2c284 !important; }
+.cabin-block:hover:not(.cabin-block--disabled) { transform: translateY(-2px); }
+.paid-toggle:hover { border-color: #7fb069 !important; }
+.close-x:hover { color: #f4efe4 !important; }
+.photo-option:hover { opacity: 1 !important; }
+.input-field:focus { border-color: rgba(201,164,92,0.6) !important; }
+.inline-edit:focus { border: 1px solid rgba(201,164,92,0.5) !important; background: #12233c !important; }
+
+/* Responsive layout helpers (breakpoint 780px, matching the prototype) —
+   let purely static pages stay server components instead of needing a
+   client-side matchMedia check just to swap a grid-template-columns value. */
+.grid-intro { display: grid; grid-template-columns: 1fr; gap: clamp(32px,5vw,72px); align-items: center; }
+.grid-gastheer { display: grid; grid-template-columns: 1fr; gap: clamp(36px,5vw,72px); align-items: center; }
+.grid-schip-groot { display: grid; grid-template-columns: 1fr; gap: 16px; margin-bottom: 16px; }
+.grid-prog-dag { display: grid; grid-template-columns: 1fr; gap: clamp(16px,3vw,48px); margin-bottom: 64px; }
+.grid-prog-item { display: grid; grid-template-columns: 90px 1fr; gap: 16px; padding: 13px 0; border-bottom: 1px solid rgba(232,228,218,0.09); align-items: baseline; }
+.section-pad { padding: 56px 20px 70px; }
+.hero-height { height: 70vh; min-height: 540px; }
+@media (min-width: 781px) {
+  .grid-intro { grid-template-columns: 1fr 1.15fr; }
+  .grid-gastheer { grid-template-columns: 1fr 1.2fr; }
+  .grid-schip-groot { grid-template-columns: 2fr 1fr; }
+  .grid-prog-dag { grid-template-columns: 220px 1fr; }
+  .grid-prog-item { grid-template-columns: 130px 1fr; }
+  .section-pad { padding: 90px 32px 120px; }
+  .hero-height { height: 86vh; }
+}
+
+/* Admin shell (breakpoint 820px, matching the prototype) */
+.admin-shell { display: grid; grid-template-columns: 1fr; min-height: 100vh; }
+.admin-sidebar { background: #081120; border-right: 1px solid rgba(201,164,92,0.2); padding: 20px 0; display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; }
+.admin-main { padding: 24px 16px; min-width: 0; }
+.admin-grid-hutten { display: grid; grid-template-columns: 1fr; gap: 28px; }
+.admin-boekingen-row { display: grid; grid-template-columns: 56px 1.1fr 1.4fr 1fr 84px 96px 64px 150px 160px; gap: 10px; }
+@media (min-width: 821px) {
+  .admin-shell { grid-template-columns: 230px 1fr; }
+  .admin-sidebar { flex-direction: column; }
+  .admin-main { padding: 36px 40px; }
+  .admin-grid-hutten { grid-template-columns: minmax(0,1fr) 330px; }
+}
