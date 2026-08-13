@@ -25,3 +25,5 @@ Single Next.js 15 App Router project — pages, API routes, and database access 
 3. Add the same env vars from `.env.local` in the Vercel project settings (Production + Preview).
 4. Enable Blob storage on the project (Storage tab) if you haven't already — this generates `BLOB_READ_WRITE_TOKEN` automatically for you in that environment.
 5. Deploy, then run `npm run seed` once against the production `MONGODB_URI` (e.g. from your machine with `.env.local` pointed at the prod database) to create the admin user and defaults.
+85.10.159.172
+2a01:7c8:f0:10f1:0:2:b6b5:699b
