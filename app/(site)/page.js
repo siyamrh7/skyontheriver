@@ -62,7 +62,7 @@ export default async function HomePage() {
             U stapt vrijdagmiddag aan boord in Zaandam. Terwijl de skyline langzaam voorbijglijdt, geniet u van high tea, een diner met muzikale begeleiding en een feestavond met DJ Barry Brand. Zaterdag ligt het schip in Arnhem — de stad is van u, of blijf aan boord voor lunch en high tea met prosecco.
           </p>
           <p style={{ fontSize: 16, lineHeight: 1.8, color: 'rgba(232,228,218,0.78)', margin: '0 0 32px' }}>
-            Alle hutten zijn voorzien van airconditioning, minikoelkast, waterkoker en koffiezetapparaat. Aan boord: restaurant, bistro met live cooking, panoramasalon met bar, wellness, fitness en kapper.
+            Alle hutten zijn voorzien van airconditioning, minikoelkast, waterkoker en koffiezetapparaat. Aan boord: restaurant, bistro met live cooking, panoramasalon met bar, wellness, fitness.
           </p>
           <Link href="/schip" className="link-gold" style={{ cursor: 'pointer', display: 'inline-flex', alignItems: 'center', gap: 12, color: '#c9a45c', fontSize: 14, letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none' }}>
             <span>Ontdek het schip</span>
