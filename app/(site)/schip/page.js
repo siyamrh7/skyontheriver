@@ -9,9 +9,9 @@ export default async function SchipPage() {
   return (
     <div className="section-pad" style={{ maxWidth: 1240, margin: '0 auto' }}>
       <div style={{ fontSize: 12, letterSpacing: '0.32em', textTransform: 'uppercase', color: '#c9a45c', marginBottom: 18 }}>Het schip</div>
-      <h1 style={{ fontFamily: "'Italiana',serif", fontSize: 'clamp(38px,6vw,60px)', fontWeight: 500, margin: '0 0 20px', color: '#f4efe4' }}>MS Viva Moments</h1>
+      <h1 style={{ fontFamily: "'Italiana',serif", fontSize: 'clamp(38px,6vw,60px)', fontWeight: 500, margin: '0 0 20px', color: '#f4efe4' }}>MS Joy</h1>
       <p style={{ fontSize: 17, lineHeight: 1.8, color: 'rgba(232,228,218,0.78)', maxWidth: 680, margin: '0 0 64px' }}>
-        Een modern vijfsterren riviercruiseschip met vier dekken, 105 hutten en suites, twee restaurants, een panoramasalon met bar, wellness met massageruimte, fitness en kapper aan boord.
+        De MS JOY behoort sinds 2016 tot de Scylla-vloot. Ze is 135 meter lang, 11,45 meter breed en heeft een diepgang van 1,97 meter. Dit biedt ruimte aan 142 gasten, verdeeld over 22 master suites, 32 suites (waarvan 8 zich over twee dekken uitstrekken), 4 junior suites en 13 double rooms. De boven- en middendekken hebben Franse balkons en alle hutten kijken uit op de zee.
       </p>
 
       <div className="grid-schip-groot">
@@ -28,9 +28,9 @@ export default async function SchipPage() {
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: 40 }}>
-        <Blok titel="Restaurant & bistro" tekst="Diner in het restaurant met wijnklimaatkast, of informeel tafelen in de bistro met live cooking. Vrijdag high tea, zaterdag galadiner met dinershow." />
+        <Blok titel="Restaurant, bistro & brasserie" tekst="Diner in het restaurant met wijnklimaatkast, of informeel tafelen in de bistro met live cooking. Vrijdag high tea, zaterdag galadiner met dinershow." />
         <Blok titel="Panoramasalon & bar" tekst="Ramen rondom, een vleugel en een ronde bar onder kristallen kroonluchters — hier speelt de muziek en dansen we tot de bar sluit." />
-        <Blok titel="Wellness & fitness" tekst="Massageruimte, kapper en een fitnessruimte met Technogym-apparatuur. Bijkomen doet u op het zonnedek met ligstoelen en putting green." />
+        <Blok titel="Wellness & fitness" tekst="Massageruimte, verwarmd zwembad en een fitnessruimte met Technogym-apparatuur. Bijkomen doet u op het zonnedek met ligstoelen en putting green." />
       </div>
     </div>
   );

@@ -10,7 +10,7 @@ export default async function ProgrammaPage() {
       <div style={{ fontSize: 12, letterSpacing: '0.32em', textTransform: 'uppercase', color: '#c9a45c', marginBottom: 18 }}>Het programma</div>
       <h1 style={{ fontFamily: "'Italiana',serif", fontSize: 'clamp(38px,6vw,60px)', fontWeight: 500, margin: '0 0 20px', color: '#f4efe4' }}>Drie dagen, uur voor uur</h1>
       <p style={{ fontSize: 17, lineHeight: 1.8, color: 'rgba(232,228,218,0.78)', maxWidth: 640, margin: '0 0 24px' }}>
-        Opstapplaats: Prins Hendrikkade, Zaandam. Parkeertip: parkeergarage De Burcht — dagkaart € 10 per dag, in te stellen via de parkeerapp van vrijdag tot zondag.
+        Opstapplaats: Prins Hendrikkade, Zaandam. Parkeertip: parkeerplaats De Burcht — dagkaart € 10 per dag, in te stellen via de parkeerapp van vrijdag tot zondag.
       </p>
       <div style={{ height: 1, background: 'rgba(201,164,92,0.3)', margin: '40px 0 56px' }} />
 

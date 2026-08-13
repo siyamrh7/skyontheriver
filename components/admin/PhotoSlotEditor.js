@@ -2,8 +2,8 @@
 import { useState } from 'react';
 import { apiPost, apiPatch, apiDelete } from '../../lib/apiClient';
 
-const PAGINA_VOLGORDE = ['Home', 'Het schip', 'Hutten & prijzen', 'Gastheer'];
-const PAGINA_ANCHOR = { Home: '', 'Het schip': 'schip', 'Hutten & prijzen': 'hutten', Gastheer: 'gastheer' };
+const PAGINA_VOLGORDE = ['Home', 'Het schip', 'Suites & prijzen', 'Gastheer'];
+const PAGINA_ANCHOR = { Home: '', 'Het schip': 'schip', 'Suites & prijzen': 'hutten', Gastheer: 'gastheer' };
 
 export default function PhotoSlotEditor({ initialSlots, library }) {
   const [slots, setSlots] = useState(initialSlots);

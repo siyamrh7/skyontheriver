@@ -2,7 +2,7 @@ import './globals.css';
 
 export const metadata = {
   title: 'Stars on the River — Riviercruise 19–21 maart 2027',
-  description: 'Een muzikale riviercruise aan boord van de MS Viva Moments, 19–21 maart 2027.',
+  description: 'Een muzikale riviercruise aan boord van de MS Joy, 19–21 maart 2027.',
 };
 
 export default function RootLayout({ children }) {

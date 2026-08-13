@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { apiPut, apiPost, apiPatch } from '../../lib/apiClient';
 
 function basisPrijsVoorNummer(num, settings) {
+  if ((settings.mastersuites || []).includes(num)) return settings.mastersuitePrijs;
+  if ((settings.videSuites || []).includes(num)) return settings.videSuitePrijs;
   if ((settings.suites || []).includes(num)) return settings.suitePrijs;
   if ((settings.junior || []).includes(num)) return settings.juniorPrijs;
   const dek = (settings.dekken || []).find((d) => num >= d.van && num <= d.tot);
@@ -28,6 +30,10 @@ export default function PriceSettingsForm({ initialSettings, initialCabins }) {
   const [suitePrijs, setSuitePrijs] = useState(String(initialSettings.suitePrijs));
   const [junior, setJunior] = useState(initialSettings.junior.join(', '));
   const [juniorPrijs, setJuniorPrijs] = useState(String(initialSettings.juniorPrijs));
+  const [videSuites, setVideSuites] = useState(initialSettings.videSuites.join(', '));
+  const [videSuitePrijs, setVideSuitePrijs] = useState(String(initialSettings.videSuitePrijs));
+  const [mastersuites, setMastersuites] = useState(initialSettings.mastersuites.join(', '));
+  const [mastersuitePrijs, setMastersuitePrijs] = useState(String(initialSettings.mastersuitePrijs));
   const [cabins, setCabins] = useState(initialCabins);
   const [nieuwNum, setNieuwNum] = useState('');
   const [nieuwPrijs, setNieuwPrijs] = useState('');
@@ -46,6 +52,8 @@ export default function PriceSettingsForm({ initialSettings, initialCabins }) {
 
   const saveSuites = () => apiPut('/api/admin/settings', { suites: parseNums(suites), suitePrijs: parseInt(suitePrijs, 10) || 0 }).then((s) => setSettings(s));
   const saveJunior = () => apiPut('/api/admin/settings', { junior: parseNums(junior), juniorPrijs: parseInt(juniorPrijs, 10) || 0 }).then((s) => setSettings(s));
+  const saveVideSuites = () => apiPut('/api/admin/settings', { videSuites: parseNums(videSuites), videSuitePrijs: parseInt(videSuitePrijs, 10) || 0 }).then((s) => setSettings(s));
+  const saveMastersuites = () => apiPut('/api/admin/settings', { mastersuites: parseNums(mastersuites), mastersuitePrijs: parseInt(mastersuitePrijs, 10) || 0 }).then((s) => setSettings(s));
 
   const overrides = cabins.filter((c) => c.prijsOverride != null).sort((a, b) => a.nummer - b.nummer);
 
@@ -80,6 +88,10 @@ export default function PriceSettingsForm({ initialSettings, initialCabins }) {
     setSuitePrijs(String(updated.suitePrijs));
     setJunior(updated.junior.join(', '));
     setJuniorPrijs(String(updated.juniorPrijs));
+    setVideSuites(updated.videSuites.join(', '));
+    setVideSuitePrijs(String(updated.videSuitePrijs));
+    setMastersuites(updated.mastersuites.join(', '));
+    setMastersuitePrijs(String(updated.mastersuitePrijs));
     setCabins((prev) => prev.map((c) => ({ ...c, prijsOverride: null })));
   };
 
@@ -163,6 +175,20 @@ export default function PriceSettingsForm({ initialSettings, initialCabins }) {
           <input value={junior} onChange={(e) => setJunior(e.target.value)} onBlur={saveJunior} className="input-field" style={{ ...fieldStyle('#f4efe4', false), marginBottom: 12 }} />
           <div style={{ fontSize: 11, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'rgba(232,228,218,0.45)', marginBottom: 6 }}>Prijs p.p.</div>
           <input value={juniorPrijs} onChange={(e) => setJuniorPrijs(e.target.value)} onBlur={saveJunior} className="input-field" style={{ ...fieldStyle('#e2c284', false), width: 130 }} />
+        </div>
+        <div style={{ background: '#0e1b2e', border: '1px solid rgba(201,164,92,0.2)', padding: '20px 22px' }}>
+          <div style={{ fontSize: 14, fontWeight: 600, color: '#f4efe4', marginBottom: 12 }}>Vide Suite</div>
+          <div style={{ fontSize: 11, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'rgba(232,228,218,0.45)', marginBottom: 6 }}>Hutnummers (komma-gescheiden)</div>
+          <input value={videSuites} onChange={(e) => setVideSuites(e.target.value)} onBlur={saveVideSuites} className="input-field" style={{ ...fieldStyle('#f4efe4', false), marginBottom: 12 }} />
+          <div style={{ fontSize: 11, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'rgba(232,228,218,0.45)', marginBottom: 6 }}>Prijs p.p.</div>
+          <input value={videSuitePrijs} onChange={(e) => setVideSuitePrijs(e.target.value)} onBlur={saveVideSuites} className="input-field" style={{ ...fieldStyle('#e2c284', false), width: 130 }} />
+        </div>
+        <div style={{ background: '#0e1b2e', border: '1px solid rgba(201,164,92,0.2)', padding: '20px 22px' }}>
+          <div style={{ fontSize: 14, fontWeight: 600, color: '#f4efe4', marginBottom: 12 }}>Mastersuite</div>
+          <div style={{ fontSize: 11, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'rgba(232,228,218,0.45)', marginBottom: 6 }}>Hutnummers (komma-gescheiden)</div>
+          <input value={mastersuites} onChange={(e) => setMastersuites(e.target.value)} onBlur={saveMastersuites} className="input-field" style={{ ...fieldStyle('#f4efe4', false), marginBottom: 12 }} />
+          <div style={{ fontSize: 11, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'rgba(232,228,218,0.45)', marginBottom: 6 }}>Prijs p.p.</div>
+          <input value={mastersuitePrijs} onChange={(e) => setMastersuitePrijs(e.target.value)} onBlur={saveMastersuites} className="input-field" style={{ ...fieldStyle('#e2c284', false), width: 130 }} />
         </div>
       </div>
     </div>

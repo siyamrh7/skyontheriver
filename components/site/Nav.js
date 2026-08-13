@@ -9,7 +9,7 @@ const TABS = [
   { href: '/', label: 'Home' },
   { href: '/schip', label: 'Het schip' },
   { href: '/programma', label: 'Programma' },
-  { href: '/hutten', label: 'Hutten & prijzen' },
+  { href: '/hutten', label: 'Suites & prijzen' },
   { href: '/arnhem', label: 'Arnhem' },
   { href: '/gastheer', label: 'Gastheer' },
 ];

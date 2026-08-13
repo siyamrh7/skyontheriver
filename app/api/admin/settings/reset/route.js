@@ -8,6 +8,10 @@ import {
   DEFAULT_SUITE_PRIJS,
   DEFAULT_JUNIOR,
   DEFAULT_JUNIOR_PRIJS,
+  DEFAULT_VIDE_SUITES,
+  DEFAULT_VIDE_SUITE_PRIJS,
+  DEFAULT_MASTERSUITES,
+  DEFAULT_MASTERSUITE_PRIJS,
   DEFAULT_PROGRAMMA,
 } from '../../../../../lib/utils/defaults.js';
 
@@ -28,6 +32,10 @@ export async function POST(request) {
     settings.suitePrijs = DEFAULT_SUITE_PRIJS;
     settings.junior = DEFAULT_JUNIOR;
     settings.juniorPrijs = DEFAULT_JUNIOR_PRIJS;
+    settings.videSuites = DEFAULT_VIDE_SUITES;
+    settings.videSuitePrijs = DEFAULT_VIDE_SUITE_PRIJS;
+    settings.mastersuites = DEFAULT_MASTERSUITES;
+    settings.mastersuitePrijs = DEFAULT_MASTERSUITE_PRIJS;
     await Cabin.updateMany({}, { prijsOverride: null });
   } else {
     return NextResponse.json({ error: 'Onbekend reset-doel' }, { status: 400 });

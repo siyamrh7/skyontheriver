@@ -5,7 +5,7 @@ export default function Footer() {
         <div>
           <div style={{ fontFamily: "'Italiana',serif", fontSize: 22, letterSpacing: '0.12em', color: '#f4efe4', marginBottom: 12 }}>STARS ON THE RIVER</div>
           <div style={{ fontSize: 14, lineHeight: 1.8, color: 'rgba(232,228,218,0.55)', maxWidth: 360 }}>
-            Een muzikale riviercruise gepresenteerd door Denny Braaf aan boord van de MS Viva Moments. 19, 20 en 21 maart 2027, vanuit Zaandam.
+            Een muzikale riviercruise gepresenteerd door Denny Braaf aan boord van de MS Joy. 19, 20 en 21 maart 2027, vanuit Zaandam.
           </div>
         </div>
         <div>

@@ -4,7 +4,7 @@ export default function ArnhemPage() {
       <div style={{ fontSize: 12, letterSpacing: '0.32em', textTransform: 'uppercase', color: '#c9a45c', marginBottom: 18 }}>Zaterdag in Arnhem</div>
       <h1 style={{ fontFamily: "'Italiana',serif", fontSize: 'clamp(38px,6vw,60px)', fontWeight: 500, margin: '0 0 20px', color: '#f4efe4' }}>Een dag om de stad te ontdekken</h1>
       <p style={{ fontSize: 17, lineHeight: 1.8, color: 'rgba(232,228,218,0.78)', maxWidth: 640, margin: '0 0 64px' }}>
-        Zaterdag ligt de MS Viva Moments van 09:00 tot 18:00 uur aan de kade in Arnhem. Stap van boord — of blijf aan boord en geniet van lunch en high tea.
+        Zaterdag ligt de MS Joy van 09:00 tot 18:00 uur aan de kade in Arnhem. Stap van boord — of blijf aan boord en geniet van lunch en high tea.
       </p>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(300px,1fr))', gap: 40 }}>

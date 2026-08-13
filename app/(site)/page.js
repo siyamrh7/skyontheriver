@@ -13,7 +13,7 @@ export default async function HomePage() {
       <div className="hero-height" style={{ position: 'relative', overflow: 'hidden' }}>
         <img
           src={settings.fotos.hero}
-          alt="Lobby MS Viva Moments"
+          alt="Lobby MS Joy"
           style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%' }}
         />
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(11,21,36,0.72) 0%, rgba(11,21,36,0.45) 45%, rgba(11,21,36,0.96) 100%)' }} />
@@ -29,11 +29,11 @@ export default async function HomePage() {
               <span style={{ color: '#e2c284' }}>River Cruise</span>
             </h1>
             <p style={{ fontSize: 18, lineHeight: 1.7, color: 'rgba(232,228,218,0.85)', maxWidth: 540, margin: '28px 0 40px' }}>
-              Een muzikale riviercruise aan boord van de vijfsterren MS Viva Moments. Van Zaandam naar Arnhem — met livemuziek, galadiner en feest tot in de kleine uurtjes.
+              Een muzikale riviercruise aan boord van de vijfsterren MS Joy. Van Zaandam naar Arnhem — met livemuziek, galadiner en feest tot in de kleine uurtjes.
             </p>
             <div style={{ display: 'flex', gap: 16, alignItems: 'center', flexWrap: 'wrap' }}>
               <Link href="/hutten" className="gold-btn" style={{ cursor: 'pointer', padding: '16px 34px', background: '#c9a45c', color: '#0b1524', fontSize: 14, fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none' }}>
-                Bekijk hutten &amp; prijzen
+                Bekijk suites &amp; prijzen
               </Link>
               <Link href="/programma" className="outline-btn" style={{ cursor: 'pointer', padding: '15px 34px', border: '1px solid rgba(232,228,218,0.4)', color: '#f4efe4', fontSize: 14, letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none' }}>
                 Het programma
@@ -48,7 +48,7 @@ export default async function HomePage() {
         <div style={{ maxWidth: 1240, margin: '0 auto', padding: '28px 32px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(230px,1fr))', gap: 24 }}>
           <Feit label="Afvaart" waarde="Zaandam, Prins Hendrikkade" />
           <Feit label="Data" waarde="Vr 19 – zo 21 maart 2027" />
-          <Feit label="Schip" waarde="MS Viva Moments ★★★★★" />
+          <Feit label="Schip" waarde="MS Joy ★★★★★" />
           <Feit label="Vanaf" waarde={`€ ${minPrijs} per persoon`} />
         </div>
       </div>
@@ -82,11 +82,11 @@ export default async function HomePage() {
         <div style={{ position: 'relative', overflow: 'hidden', padding: 'clamp(36px,5vw,72px) clamp(24px,5vw,64px)', background: 'linear-gradient(120deg, #12233c 0%, #0e1b2e 100%)', border: '1px solid rgba(201,164,92,0.35)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 28, flexWrap: 'wrap' }}>
           <div style={{ position: 'absolute', top: -40, right: -40, width: 220, height: 220, border: '1px solid rgba(201,164,92,0.2)', transform: 'rotate(45deg)' }} />
           <div>
-            <h3 style={{ fontFamily: "'Italiana',serif", fontSize: 36, fontWeight: 500, margin: '0 0 10px', color: '#f4efe4' }}>Kies uw hut op de plattegrond</h3>
-            <p style={{ fontSize: 15.5, color: 'rgba(232,228,218,0.75)', margin: 0, maxWidth: 520, lineHeight: 1.7 }}>Zie per hut direct de beschikbaarheid en de prijs — van Smaragd Deck tot de suites op het Diamant Deck.</p>
+            <h3 style={{ fontFamily: "'Italiana',serif", fontSize: 36, fontWeight: 500, margin: '0 0 10px', color: '#f4efe4' }}>Kies uw plek aan boord</h3>
+            <p style={{ fontSize: 15.5, color: 'rgba(232,228,218,0.75)', margin: 0, maxWidth: 520, lineHeight: 1.7 }}>Van de Double Cabin tot de Mastersuite — bekijk alle categorieën, prijzen en beschikbaarheid.</p>
           </div>
           <Link href="/hutten" className="gold-btn" style={{ cursor: 'pointer', flexShrink: 0, padding: '17px 36px', background: '#c9a45c', color: '#0b1524', fontSize: 14, fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', textDecoration: 'none' }}>
-            Naar het dekkenplan
+            Bekijk suites &amp; prijzen
           </Link>
         </div>
       </div>

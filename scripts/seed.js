@@ -12,6 +12,10 @@ import {
   DEFAULT_SUITE_PRIJS,
   DEFAULT_JUNIOR,
   DEFAULT_JUNIOR_PRIJS,
+  DEFAULT_VIDE_SUITES,
+  DEFAULT_VIDE_SUITE_PRIJS,
+  DEFAULT_MASTERSUITES,
+  DEFAULT_MASTERSUITE_PRIJS,
   DEFAULT_PROGRAMMA,
 } from '../lib/utils/defaults.js';
 
@@ -26,6 +30,10 @@ async function seed() {
       suitePrijs: DEFAULT_SUITE_PRIJS,
       junior: DEFAULT_JUNIOR,
       juniorPrijs: DEFAULT_JUNIOR_PRIJS,
+      videSuites: DEFAULT_VIDE_SUITES,
+      videSuitePrijs: DEFAULT_VIDE_SUITE_PRIJS,
+      mastersuites: DEFAULT_MASTERSUITES,
+      mastersuitePrijs: DEFAULT_MASTERSUITE_PRIJS,
       programma: DEFAULT_PROGRAMMA,
       fotos: defaultFotos(),
     });
