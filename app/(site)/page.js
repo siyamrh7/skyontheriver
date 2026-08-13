@@ -43,6 +43,10 @@ export default async function HomePage() {
         </div>
       </div>
 
+
+
+
+
       {/* Feiten strip */}
       <div style={{ borderTop: '1px solid rgba(201,164,92,0.25)', borderBottom: '1px solid rgba(201,164,92,0.25)', background: '#0e1b2e' }}>
         <div style={{ maxWidth: 1240, margin: '0 auto', padding: '28px 32px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(230px,1fr))', gap: 24 }}>
