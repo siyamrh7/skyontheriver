@@ -20,9 +20,10 @@ export default async function HomePage() {
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(95deg, rgba(11,21,36,0.94) 0%, rgba(11,21,36,0.82) 38%, rgba(11,21,36,0.35) 68%, rgba(11,21,36,0.1) 100%)' }} />
         <div style={{ position: 'relative', zIndex: 2, maxWidth: 1240, margin: '0 auto', padding: '0 32px', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
           <div style={{ animation: 'fadeUp .8s ease both' }}>
+            <img src="/photos/denny-braaf-logo.png" alt="Denny Braaf" style={{ height: 34, width: 'auto', display: 'block', marginBottom: 14 }} />
             <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 22 }}>
               <div style={{ width: 56, height: 1, background: '#c9a45c' }} />
-              <div style={{ fontSize: 13, letterSpacing: '0.38em', textTransform: 'uppercase', color: '#c9a45c' }}>Denny Braaf presenteert</div>
+              <div style={{ fontSize: 13, letterSpacing: '0.38em', textTransform: 'uppercase', color: '#c9a45c' }}> presenteert</div>
             </div>
             <h1 style={{ fontFamily: "'Italiana',serif", fontSize: 'clamp(56px,7.4vw,108px)', fontWeight: 400, lineHeight: 1.03, margin: 0, color: '#f4efe4', maxWidth: 940, letterSpacing: '0.02em', textShadow: '0 2px 30px rgba(8,17,32,0.85), 0 1px 6px rgba(8,17,32,0.6)' }}>
               Stars on the<br />
