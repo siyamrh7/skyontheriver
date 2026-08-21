@@ -19,7 +19,7 @@ export default function Footer() {
         <div>
           <div style={{ fontSize: 12, letterSpacing: '0.24em', textTransform: 'uppercase', color: '#c9a45c', marginBottom: 14 }}>Contact</div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 8, fontSize: 14, color: 'rgba(232,228,218,0.65)' }}>
-            <span>info@starsontheriver.nl</span>
+            <a href="mailto:info@starsontheriver.nl" style={{ color: 'inherit', textDecoration: 'none' }}>info@starsontheriver.nl</a>
             <span>starsontheriver.nl</span>
           </div>
         </div>
