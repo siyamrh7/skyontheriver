@@ -21,6 +21,20 @@ export default function Footer() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: 8, fontSize: 14, color: 'rgba(232,228,218,0.65)' }}>
             <a href="mailto:info@starsontheriver.nl" style={{ color: 'inherit', textDecoration: 'none' }}>info@starsontheriver.nl</a>
             <span>starsontheriver.nl</span>
+            <a
+              href="https://www.instagram.com/starsontheriver.nl/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              style={{ display: 'inline-flex', alignItems: 'center', gap: 8, color: 'inherit', textDecoration: 'none', marginTop: 4 }}
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <circle cx="12" cy="12" r="4.2" />
+                <circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none" />
+              </svg>
+              <span>@starsontheriver.nl</span>
+            </a>
           </div>
         </div>
       </div>

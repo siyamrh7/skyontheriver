@@ -11,7 +11,7 @@ export default async function SchipPage() {
       <div style={{ fontSize: 12, letterSpacing: '0.32em', textTransform: 'uppercase', color: '#c9a45c', marginBottom: 18 }}>Het schip</div>
       <h1 style={{ fontFamily: "'Italiana',serif", fontSize: 'clamp(38px,6vw,60px)', fontWeight: 500, margin: '0 0 20px', color: '#f4efe4' }}>MS Joy</h1>
       <p style={{ fontSize: 17, lineHeight: 1.8, color: 'rgba(232,228,218,0.78)', maxWidth: 680, margin: '0 0 64px' }}>
-        De MS JOY behoort sinds 2016 tot de Scylla-vloot. Ze is 135 meter lang, 11,45 meter breed en heeft een diepgang van 1,97 meter. Dit biedt ruimte aan 142 gasten, verdeeld over 22 master suites, 32 suites (waarvan 8 zich over twee dekken uitstrekken), 4 junior suites en 13 double rooms. De boven- en middendekken hebben Franse balkons en alle hutten kijken uit op de zee.
+        De MS JOY behoort sinds 2016 tot de Scylla-vloot. Ze is 135 meter lang, 11,45 meter breed en heeft een diepgang van 1,97 meter. Dit biedt ruimte aan 142 gasten, verdeeld over 22 master suites, 32 suites (waarvan 8 zich over twee dekken uitstrekken), 4 junior suites en 13 double rooms. De boven- en middendekken hebben Franse balkons en alle hutten kijken uit op de rivier.
       </p>
 
       <div className="grid-schip-groot">
